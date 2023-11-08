@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap");
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: calc(100vw / 1440 * 10);
+}
+body {
+  height: 100%;
+  min-height: 100%;
+  font-family: "Jost";
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  overflow-x: hidden; /*для горизонтального*/
+}
+h1 {
+  font-weight: 800;
+  font-size: 20rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.035em;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 5.2rem;
+  letter-spacing: 0.115em;
+  text-align: center;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.105rem;
+}
+.container {
+  width: 120rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.header {
+  padding-top: 2.9rem;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.header-head {
+  display: flex;
+}
+.logo-bailkal {
+  max-width: 5.2rem;
+  padding-top: 2rem;
+}
+nav {
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+ul {
+  display: block;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+li {
+  display: inline;
+  margin-right: 7.9rem;
+}
+nav a:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+}
+a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+  transition: all 0.5s ease;
+  color: #ffffff;
+}
+.visited {
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.backround {
+  background: url(../img/Backround.jpg) no-repeat center top / cover;
+}
+.section-quastion h2 {
+  margin-bottom: 4rem;
+}
+.section-quastion_items {
+  margin-bottom: 7rem;
+}
+.spoiler_wrap {
+  margin-bottom: 4rem;
+  padding: 2.4rem 2.7rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #fff;
+}
+.arrow-t {
+  margin-left: auto;
+  cursor: pointer;
+  transition: 1s;
+}
+.spoiler_title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.spoiler_title_wrap {
+  width: 100%;
+  display: inline-block;
+}
+.spoiler_content {
+  display: none;
+}
+.arrow-b {
+  transform: rotateZ(180deg);
+  transform-style: flat;
+  transition: 1s;
+}
+.section-quastion_item:not(:last-child) {
+  margin-bottom: 4rem;
+}
+.section-quastion-button {
+  display: block;
+  border: 1px solid #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.0875rem;
+  padding: 2.7rem 2.9rem;
+  margin: 0 auto;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 10rem;
+  transition: 1s;
+}
+.section-quastion-button:hover {
+  color: black;
+  background-color: white;
+}
+footer {
+  left: 0;
+  bottom: 0;
+  height: 31.4rem;
+  width: 100%;
+  height: 31.4rem;
+  background-color: #3e2f16;
+}
+.footer-menu {
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 9.2rem;
+  text-align: left;
+}
+.footer-menu-item {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.07rem;
+}
+.footer-menu-item:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+.footer-menu-item a:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: calc(100vw / 500 * 10);
+  }
+  .nav-menu {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 80vh;
+    background: white;
+    transition: 1s all;
+  }
+  .nav-menu a {
+    color: #3e2f16;
+    font-size: 25px;
+  }
+  .nav-menu ul {
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+  }
+  .nav-menu li {
+    margin-bottom: 20px;
+  }
+  .nav-menu a:hover {
+    border-bottom: 1px solid #3e2f16;
+  }
+  .nav-menu_active .header-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-menu_active {
+    right: 0;
+  }
+  .hamburger {
+    z-index: 20;
+    padding-top: 3rem;
+    width: 50px;
+    height: 50px;
+  }
+  .hamburger span {
+    height: 3px;
+    width: 100%;
+    display: block;
+    background: white;
+    margin-bottom: 9px;
+  }
+  .hamburger span:last-child {
+    margin-bottom: 0;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+    transition: 1s all;
+  }
+  .hamburger_active span:nth-child(1) {
+    background: #3e2f16;
+    transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    background: #3e2f16;
+    transform: translateY(3px) rotate(45deg);
+  }
+  .header-head {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: calc(100vw / 768 * 10);
+  }
+  h1 {
+    font-size: 15rem;
+  }
+  .name-quastion {
+    display: flex;
+    width: 70rem;
+  }
+  .footer-menu {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: calc(100vw / 375 * 10);
+  }
+  h1 {
+    display: none;
+  }
+  .name-quastion {
+    display: block;
+    text-align: center;
+  }
+  .name-quastion {
+    display: flex;
+    width: auto;
+  }
+  .name-quastion h3 {
+    margin-right: 2rem;
+  }
+  .footer-menu {
+    text-align: center;
+  }
+}

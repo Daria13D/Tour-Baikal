@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap");
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: calc(100vw / 1440 * 10);
+}
+body {
+  height: 100%;
+  min-height: 100%;
+  font-family: "Jost";
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  overflow-x: hidden; /*для горизонтального*/
+}
+h1 {
+  font-weight: 800;
+  font-size: 20rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.035em;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 5.2rem;
+  letter-spacing: 0.115em;
+  text-align: center;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.105rem;
+}
+.container {
+  width: 120rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.header {
+  padding-top: 2.9rem;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.header-head {
+  display: flex;
+}
+.logo-bailkal {
+  max-width: 5.2rem;
+  padding-top: 2rem;
+}
+nav {
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+ul {
+  display: block;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+li {
+  display: inline;
+  margin-right: 7.9rem;
+}
+nav a:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+}
+a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  line-height: 2.9rem;
+  transition: all 0.5s ease;
+  color: #ffffff;
+}
+.visited {
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.backround {
+  background: url(../img/Backround.jpg) no-repeat center top / cover;
+}
+.section-tours_filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+.section-tours h3 {
+  margin-bottom: 4.2rem;
+}
+span {
+  margin-right: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.07rem;
+}
+.section-tours_filters p {
+  margin-bottom: 2rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+  letter-spacing: 0.0875rem;
+}
+.filters-season,
+.filters-col-days,
+.filters-activity,
+.filters-cost {
+  margin-right: 8rem;
+}
+.list {
+  border: 1px solid #fff;
+  min-width: 12rem;
+  max-width: 25rem;
+}
+.list-content {
+  padding: 0.8rem 2.3rem;
+}
+.list-content img {
+  width: 15px;
+  text-align: center;
+}
+.days-check-boxes {
+  display: flex;
+}
+.check-box {
+  border: 1px solid #fff;
+  display: block;
+  margin-right: 2.3rem;
+  font-weight: 200;
+  letter-spacing: 0.07rem;
+  padding: 0.01rem 1rem;
+  text-align: center;
+}
+.section-tours_item {
+  display: flex;
+  border: 1px solid #fff;
+  width: 100%;
+}
+.section-tours_items {
+  margin-bottom: 7rem;
+}
+.section-tours_item img {
+  margin-right: 5rem;
+}
+.section-tours_item_content {
+  padding: 2.4rem 2.7rem;
+}
+.name-cost {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.name-cost p {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.0875rem;
+  margin-left: auto;
+}
+.section-tours_item_content-text {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.07rem;
+  margin-bottom: 2rem;
+}
+.item-content-info {
+  display: flex;
+}
+.item-content-info-small p {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.0875rem;
+  margin-bottom: 0.7rem;
+}
+.item-content-info-small i {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.0875rem;
+}
+.item-content-season {
+  margin-right: 10rem;
+}
+.item-content-button {
+  margin-left: auto;
+  max-width: 21.1rem;
+  background: #fff;
+  padding: 2rem 3.3rem;
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.0875rem;
+  transition: 1s;
+}
+.item-content-button:hover {
+  color: white;
+  border: 1px solid #ffffff;
+  background-color: inherit;
+}
+.section-tours_item:not(:last-child) {
+  margin-bottom: 4rem;
+}
+#cards {
+  display: none;
+}
+.section-tours-button-bay {
+  display: none;
+}
+.section-tours-button {
+  display: block;
+  background-color: inherit;
+  color: white;
+  border: 1px solid #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.0875rem;
+  padding: 2.9rem 2.9rem;
+  margin: 0 auto;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 10rem;
+  transition: 1s;
+}
+.section-tours-button:hover {
+  color: black;
+  background-color: white;
+}
+footer {
+  left: 0;
+  bottom: 0;
+  height: 31.4rem;
+  width: 100%;
+  height: 31.4rem;
+  background-color: #3e2f16;
+}
+.footer-menu {
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 9.2rem;
+  text-align: left;
+}
+.footer-menu-item {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.07rem;
+}
+.footer-menu-item:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+.footer-menu-item a:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: calc(100vw / 500 * 10);
+  }
+  .nav-menu {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 80vh;
+    background: white;
+    transition: 1s all;
+  }
+  .nav-menu a {
+    color: #3e2f16;
+    font-size: 25px;
+  }
+  .nav-menu ul {
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+  }
+  .nav-menu li {
+    margin-bottom: 20px;
+  }
+  .nav-menu a:hover {
+    border-bottom: 1px solid #3e2f16;
+  }
+  .nav-menu_active .header-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-menu_active {
+    right: 0;
+  }
+  .hamburger {
+    z-index: 20;
+    padding-top: 3rem;
+    width: 50px;
+    height: 50px;
+  }
+  .hamburger span {
+    height: 3px;
+    width: 100%;
+    display: block;
+    background: white;
+    margin-bottom: 9px;
+  }
+  .hamburger span:last-child {
+    margin-bottom: 0;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+    transition: 1s all;
+  }
+  .hamburger_active span:nth-child(1) {
+    background: #3e2f16;
+    transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    background: #3e2f16;
+    transform: translateY(3px) rotate(45deg);
+  }
+  .header-head {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: calc(100vw / 768 * 10);
+  }
+  h1 {
+    font-size: 15rem;
+  }
+  .footer-menu {
+    text-align: center;
+  }
+  .section-tours {
+    text-align: center;
+  }
+  .section-tours_filters {
+    display: inline-block;
+    text-align: center;
+  }
+  .list {
+    margin: 0 auto;
+  }
+  .list-content img {
+    width: 15px;
+  }
+  .filters-season,
+  .filters-col-days,
+  .filters-activity,
+  .filters-cost {
+    margin-right: 0;
+  }
+  .section-tours_item {
+    display: block;
+  }
+  .section-tours_item img {
+    width: auto;
+  }
+  .item-content-info {
+    display: block;
+    justify-content: center;
+  }
+  .item-content-button {
+    display: inline-block;
+    margin: 40px;
+  }
+  .item-content-season {
+    margin-right: 0;
+  }
+  .item-content-info-small {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: calc(100vw / 375 * 10);
+  }
+  h1 {
+    display: none;
+  }
+  .name-reviews {
+    display: block;
+    text-align: center;
+  }
+  .footer-menu {
+    text-align: center;
+  }
+  .section-tours_filters {
+    display: block;
+  }
+}
