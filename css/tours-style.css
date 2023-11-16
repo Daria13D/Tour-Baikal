@@ -396,3 +396,15 @@ footer {
     display: block;
   }
 }
+@media (max-width: 400px) {
+  .name-cost p {
+    font-size: 20px;
+  }
+  .name-cost {
+    align-items: center;
+  }
+  .section-tours_item img {
+    margin-right: 0;
+    width: 100%;
+  }
+}
