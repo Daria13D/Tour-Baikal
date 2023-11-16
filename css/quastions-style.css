@@ -179,7 +179,6 @@ footer {
   }
   .container {
     width: 800px;
-    margin-right: 100px;
   }
   h1 {
     font-size: 15rem;
@@ -289,12 +288,20 @@ footer {
 }
 @media (max-width: 350px) {
   .container {
-    width: 240px;
+    width: 300px;
   }
 }
-@media (max-width: 510px) {
+@media (max-width: 450px) {
+  .container {
+    width: 300px;
+  }
+}
+@media (max-width: 550px) {
   h3 {
     font-size: 10px;
+  }
+  .spoiler_content {
+    font-size: 9px;
   }
   .container {
     width: 350px;
