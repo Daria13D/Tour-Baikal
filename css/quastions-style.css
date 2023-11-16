@@ -197,7 +197,7 @@ footer {
 @media (max-width: 767px) {
   .spoiler_wrap {
     display: block;
-    width: 70%;
+    width: 90%;
   }
   .container {
     width: 600px;
