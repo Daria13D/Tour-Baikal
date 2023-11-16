@@ -4,6 +4,7 @@ html {
   margin: 0;
   padding: 0;
   font-size: calc(100vw / 1440 * 10);
+  overflow-x: hidden;
 }
 body {
   height: 100%;
@@ -83,6 +84,7 @@ a {
 }
 .backround {
   background: url(../img/Backround.jpg) no-repeat center top / cover;
+  overflow-x: hidden;
 }
 .section-about-us h2 {
   margin-bottom: 4.8rem;
