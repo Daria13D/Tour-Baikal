@@ -171,6 +171,7 @@ footer {
 @media (max-width: 767px) {
   .spoiler_wrap {
     display: block;
+    margin-right: 30px;
   }
   html {
     font-size: calc(100vw / 500 * 10);
