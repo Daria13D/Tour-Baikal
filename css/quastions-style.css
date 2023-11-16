@@ -168,10 +168,39 @@ footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.21);
 }
 
+@media (max-width: 1024px) {
+  html {
+    font-size: calc(100vw / 768 * 10);
+    overflow-x: hidden;
+  }
+  h3 {
+    font-size: 20px;
+    width: auto;
+  }
+  .container {
+    width: 800px;
+    margin-right: 100px;
+  }
+  h1 {
+    font-size: 15rem;
+  }
+  .name-quastion {
+    display: flex;
+    width: 70rem;
+  }
+  .footer-menu {
+    text-align: center;
+  }
+  .spoiler_wrap {
+    width: 100%;
+  }
+}
 @media (max-width: 767px) {
   .spoiler_wrap {
     display: block;
-    margin-right: 30px;
+  }
+  .container {
+    width: 600px;
   }
   html {
     font-size: calc(100vw / 500 * 10);
@@ -248,34 +277,22 @@ footer {
     justify-content: space-between;
   }
 }
-@media (max-width: 1024px) {
-  html {
-    font-size: calc(100vw / 768 * 10);
-    overflow-x: hidden;
-  }
-  h3 {
-    font-size: 20px;
-    width: auto;
-  }
+@media (max-width: 870px) {
   .container {
-    width: 900px;
-    margin-right: 100px;
-  }
-  h1 {
-    font-size: 15rem;
-  }
-  .name-quastion {
-    display: flex;
-    width: 70rem;
-  }
-  .footer-menu {
-    text-align: center;
-  }
-  .spoiler_wrap {
-    width: 100%;
+    width: 600px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 680px) {
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 350px) {
+  .container {
+    width: 240px;
+  }
+}
+@media (max-width: 510px) {
   h3 {
     font-size: 10px;
   }
@@ -303,3 +320,4 @@ footer {
     text-align: center;
   }
 }
+
