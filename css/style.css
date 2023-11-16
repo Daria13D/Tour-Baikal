@@ -4,6 +4,7 @@ html {
   margin: 0;
   padding: 0;
   font-size: calc(100vw / 1440 * 10);
+  overflow-x: hidden;
 }
 body {
   height: 100%;
@@ -45,6 +46,7 @@ h3 {
   padding-top: 2.9rem;
   padding-bottom: 9.1rem;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 .header-head {
   display: flex;
